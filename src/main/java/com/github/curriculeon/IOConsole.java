@@ -7,6 +7,7 @@ package com.github.curriculeon;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintStream;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class IOConsole {
@@ -47,7 +48,10 @@ public class IOConsole {
      * @return user's input as String
      */
     public String getStringInput(String prompt, Object... args) {
-        return null;
+        System.out.println(prompt);
+        String userInput = scanner.nextLine();
+
+        return userInput;
     }
 
     /**
@@ -56,7 +60,9 @@ public class IOConsole {
      * @return user's input as integer
      */
     public Integer getIntegerInput(String prompt, Object... args) {
-        return null;
+        System.out.println(prompt);
+        Integer integerInput = Integer.valueOf(scanner.nextLine());
+        return integerInput;
     }
 
     /**
@@ -65,7 +71,10 @@ public class IOConsole {
      * @return user's input as double
      */
     public Double getDoubleInput(String prompt, Object... args) {
-        return null;
+        System.out.println(prompt);
+        Double doubleInput = getDoubleInput(scanner.nextLine());
+
+        return doubleInput;
     }
 
     /**
@@ -74,7 +83,10 @@ public class IOConsole {
      * @return user's input as float
      */ // TODO - Change recursion to iteration
     public Float getFloatInput(String prompt, Object... args) {
-        return null;
+        System.out.println(prompt);
+        Float floatInput = Float.valueOf(scanner.nextLine());
+
+        return floatInput;
     }
 
     /**
