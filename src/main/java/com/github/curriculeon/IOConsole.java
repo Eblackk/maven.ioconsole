@@ -86,6 +86,7 @@ public class IOConsole {
         System.out.println(prompt);
         Float floatInput = Float.valueOf(scanner.nextLine());
 
+
         return floatInput;
     }
 
@@ -95,6 +96,8 @@ public class IOConsole {
      * @return user's input as long
      */ // TODO - Change recursion to iteration
     public Long getLongInput(String prompt, Object... args) {
-        return null;
+        System.out.println(prompt);
+        Long longInput = Long.valueOf(scanner.nextLine());
+        return longInput;
     }
 }
